@@ -36,15 +36,15 @@ struct ContentView: View {
     
     var settingsView: some View {
         VStack {
-            ColorSliderView(value: $redSliderValue, accentColor: .red)
-            ColorSliderView(value: $greenSliderValue, accentColor: .green)
-            ColorSliderView(value: $blueSliderValue, accentColor: .blue)
+            SettingsRowView(value: $redSliderValue, accentColor: .red)
+            SettingsRowView(value: $greenSliderValue, accentColor: .green)
+            SettingsRowView(value: $blueSliderValue, accentColor: .blue)
         }
         .padding()
     }
 }
 
-struct ColorSliderView: View {
+struct SettingsRowView: View {
     @Binding var value: Double
     let accentColor: Color
     @State var text: String = ""
