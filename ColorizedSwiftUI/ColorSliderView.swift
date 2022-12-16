@@ -43,7 +43,6 @@ struct ColorSliderView: View {
     }
 }
 
-
 struct ColorSliderView_Previews: PreviewProvider {
     static var previews: some View {
         ColorSliderView(value: .constant(10), color: .red)
